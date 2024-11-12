@@ -60,6 +60,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - images/logo-eventura.png
     - assets/Search.png
     - assets/Logout.png
     - assets/placeholder.png
