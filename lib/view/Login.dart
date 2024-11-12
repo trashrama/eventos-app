@@ -38,13 +38,14 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 const Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Login",
-                        style: TextStyle(fontSize: 25, color: Colors.white),
-                      )
-                    ]),
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Login",
+                      style: TextStyle(fontSize: 25, color: Colors.white),
+                    )
+                  ],
+                ),
                 TextField(
                   autofocus: true,
                   keyboardType: TextInputType.emailAddress,
@@ -56,7 +57,8 @@ class _LoginState extends State<Login> {
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(6))),
                 ),
-                const SizedBox( // adiciona espaçamento de itens
+                const SizedBox(
+                  // adiciona espaçamento de itens
                   height: 20,
                 ),
                 TextField(
@@ -75,9 +77,12 @@ class _LoginState extends State<Login> {
                         _obscureText ? Icons.visibility_off : Icons.visibility,
                       ),
                       onPressed: () {
-                        setState(() {
-                          _obscureText = !_obscureText; // ao click fica ou não visivel
-                        });
+                        setState(
+                          () {
+                            _obscureText =
+                                !_obscureText; // ao click fica ou não visivel
+                          },
+                        );
                       },
                     ),
                   ),
@@ -90,9 +95,11 @@ class _LoginState extends State<Login> {
                         Checkbox(
                           value: lembrar,
                           onChanged: (bool? value) {
-                            setState(() {
-                              lembrar = value ?? false;
-                            });
+                            setState(
+                              () {
+                                lembrar = value ?? false;
+                              },
+                            );
                           },
                         ),
                         const Text(
