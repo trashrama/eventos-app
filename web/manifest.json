@@ -1,6 +1,6 @@
 {
-    "name": "tela_feed",
-    "short_name": "tela_feed",
+    "name": "primeiro_projeto",
+    "short_name": "primeiro_projeto",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
