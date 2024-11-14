@@ -17,7 +17,7 @@ class _FeedState extends State<Feed> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0XFF5DD9C1),
+        backgroundColor: const Color(0XFF5DD9C1),
         leading: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -83,17 +83,26 @@ class _FeedState extends State<Feed> {
                         : const Color(0XFF957FEF),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
-                  child: Center(
-                    child: IconButton(
-                      icon: const Icon(Icons.flash_on_outlined,
-                          size: 30.0, color: Color(0XFF121420)),
-                      onPressed: () {
-                        setState(() {
-                          _index = _index == 1 ? -1 : 1;
-                        });
-                      },
-                    ),
-                  ),
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        IconButton(
+                          icon: const Icon(Icons.flash_on_outlined,
+                              size: 30.0, color: Color(0XFF121420)),
+                          onPressed: () {
+                            setState(() {
+                              _index = _index == 1 ? -1 : 1;
+                            });
+                          },
+                        ),
+                        const Text(
+                          'Destaques',
+                          style: TextStyle(
+                              color: Color(0XFF121420),
+                              fontSize: 14.0,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ]),
                 ),
                 Container(
                   width: 70,
@@ -104,17 +113,26 @@ class _FeedState extends State<Feed> {
                         : const Color(0XFF957FEF),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
-                  child: Center(
-                    child: IconButton(
-                      icon: const Icon(Icons.location_on_outlined,
-                          size: 30.0, color: Color(0XFF121420)),
-                      onPressed: () {
-                        setState(() {
-                          _index = _index == 2 ? -1 : 2;
-                        });
-                      },
-                    ),
-                  ),
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        IconButton(
+                          icon: const Icon(Icons.location_on_outlined,
+                              size: 30.0, color: Color(0XFF121420)),
+                          onPressed: () {
+                            setState(() {
+                              _index = _index == 2 ? -1 : 2;
+                            });
+                          },
+                        ),
+                        const Text(
+                          'Próximos',
+                          style: TextStyle(
+                              color: Color(0XFF121420),
+                              fontSize: 14.0,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ]),
                 ),
                 Container(
                   width: 70,
@@ -125,17 +143,26 @@ class _FeedState extends State<Feed> {
                         : const Color(0XFF957FEF),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
-                  child: Center(
-                    child: IconButton(
-                      icon: const Icon(Icons.emoji_emotions_outlined,
-                          size: 30.0, color: Color(0XFF121420)),
-                      onPressed: () {
-                        setState(() {
-                          _index = _index == 3 ? -1 : 3;
-                        });
-                      },
-                    ),
-                  ),
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        IconButton(
+                          icon: const Icon(Icons.emoji_emotions_outlined,
+                              size: 30.0, color: Color(0XFF121420)),
+                          onPressed: () {
+                            setState(() {
+                              _index = _index == 3 ? -1 : 3;
+                            });
+                          },
+                        ),
+                        const Text(
+                          'Avaliados',
+                          style: TextStyle(
+                              color: Color(0XFF121420),
+                              fontSize: 14.0,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ]),
                 ),
               ],
             ),

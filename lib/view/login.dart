@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:Eventura/view/cadastro.dart';
-import 'package:Eventura/view/feed.dart';
+import 'package:eventura/view/cadastro.dart';
+import 'package:eventura/view/feed.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});

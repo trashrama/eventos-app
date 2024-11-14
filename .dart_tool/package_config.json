@@ -224,13 +224,13 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "Eventura",
+      "name": "eventura",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-11-13T00:08:55.470091Z",
+  "generated": "2024-11-14T14:25:29.614769Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///home/sant/development/flutter",

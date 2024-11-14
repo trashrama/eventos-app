@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:Eventura/view/login.dart';
+import 'package:eventura/view/login.dart';
 
 void main() => runApp(MaterialApp(
       title: "Eventura",
-      home: Login(),
+      home: const Login(),
       theme: ThemeData(
-          primaryColor: Color(0xff075E54),
-          colorScheme:
-              ColorScheme.fromSwatch().copyWith(secondary: Color(0xff075E54))),
+          primaryColor: const Color(0xff075E54),
+          colorScheme: ColorScheme.fromSwatch()
+              .copyWith(secondary: const Color(0xff075E54))),
       debugShowCheckedModeBanner: false,
     ));

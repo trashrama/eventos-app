@@ -1,4 +1,4 @@
-# primeiro_projeto
+# eventura
 
 A new Flutter project.
 
